@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnHub</title>
+    <link rel="stylesheet" type="text/css" href="styles1.css">
+
+</head>
+<body>
+    <nav>
+        <img src="logo.png" alt="logo">    
+    </nav> 
+    <header>
+        <h1>LEARNER</h1>
+    </header>
+    <div class="search-container">
+        <form action="/search" method="GET">
+            <input type="text" id="searchInput" name="searchInput" placeholder="Search for Courses">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <link rel="styles1" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </div>
+        <div class="learner-roles">
+            <ul>
+                <li id="dashboard">
+                    <span class="list-marker">&#9776;</span> Dashboard
+                    <ul class="sub-menu">
+                        <li onclick="window.location.href='Profile.html'"><span class="list-marker">&#10148;</span>Profile</li>
+                        <li onclick="window.location.href='My Courses.html'"><span class="list-marker">&#10148;</span>My Courses</li>
+                        <li onclick="window.location.href='Notifications and Queries.html'"><span class="list-marker">&#10148;</span>Notifications and Queries</li>
+                        <li onclick="window.location.href='Feedback.html'"><span class="list-marker">&#10148;</span>Feedback</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+        <script>
+            document.getElementById("dashboard").addEventListener("click", function() {
+                var subMenu = this.querySelector(".sub-menu");
+                subMenu.classList.toggle("show");
+            });
+        </script>
+        
+        <style>
+            .sub-menu {
+                display: none;
+                margin-top: 45px; /* Adjust this value to control the spacing */
+            }
+            .sub-menu.show {
+                display: block;
+            }
+            #dashboard {
+                cursor: pointer;
+            }
+        </style>
+        
+        
+    
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>

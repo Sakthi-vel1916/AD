@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    background-image: url('ian-schneider-TamMbr4okv4-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+h1{
+    color:rgba(19, 16, 16, 0.756);
+    font-size: 300%;
+    position: absolute;
+    top: 10;
+    left: 18%;
+    transform: translateX(-50%);
+}
+nav{
+    width: 100px;
+    height: 60px;
+    margin-left: 85%;
+    border-radius: 15px;
+    float: left;
+    display: flex;
+}
+img{
+    width: 160px;
+    height: 160px;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.enrolled-courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.course-box {
+    width: 500px;
+    height: 500px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    bottom: 100px;
+    text-align: justify;
+    text-size-adjust: 100%;
+}
+.course-box:hover{
+    background-color: #cccccc; /* Change color on hover */
+}
+.course-box h3 {
+    margin-top: 0;
+}
+
+.course-box p {
+    margin-bottom: 0;
+}
+
+

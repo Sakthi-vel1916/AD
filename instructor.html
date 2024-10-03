@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnHub</title>
+    <link rel="stylesheet" type="text/css" href="styles1.css">
+</head>
+<body>
+    <nav>
+        <img src="logo.png" alt="logo">    
+    </nav> 
+    <header>
+        <h1>INSTRUCTOR</h1>
+    </header>
+    <div class="instructor-roles">
+        <ul>
+            <li id="dashboard">
+                <span class="list-marker">&#9776;</span> Dashboard
+                <ul class="sub-menu">
+                    <li onclick="window.location.href='Add Courses.html'"><span class="list-marker">&#10148;</span>Add Courses</li>
+                    <li onclick="window.location.href='Learner Details.html'"><span class="list-marker">&#10148;</span>Learner Details</li>
+                    <li onclick="window.location.href='Community Forum.html'"><span class="list-marker">&#10148;</span>Community Forum</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <script>
+        document.getElementById("dashboard").addEventListener("click", function() {
+            var subMenu = this.querySelector(".sub-menu");
+            subMenu.classList.toggle("show");
+        });
+    </script>
+    <style>
+        .sub-menu {
+            display: none;
+            margin-top: 45px; /* Adjust this value to control the spacing */
+        }
+        .sub-menu.show {
+            display: block;
+        }
+        #dashboard {
+            cursor: pointer;
+        }
+    </style>
+</body>
+</html>
